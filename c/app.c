@@ -6,9 +6,16 @@
 
 int main(void) {
 
-	int sec;
-	printf("enter seconds");
-	scanf("%d", &sec);
+	int sec = 2500;
+	//printf("enter seconds ");
+	// scanf("%d", &sec);
+
+	int hour = sec / 3600;
+	int minutes = sec / 60;
+	float seconds = sec % 60;
+	printf("%f", seconds);
+
+
 
 	return 0;
 }
