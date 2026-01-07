@@ -6,15 +6,19 @@
 
 int main(void) {
 
-	int sec = 2500;
-	//printf("enter seconds ");
-	// scanf("%d", &sec);
 
-	int hour = sec / 3600;
-	int minutes = sec / 60;
-	float seconds = sec % 60;
-	printf("%f", seconds);
 
+	int seconds_entry;
+	printf("Digite os segundos: "); 
+	if (scanf("%d", &seconds_entry) != 1) {
+		printf("Digite um numero válido");
+		return 1;
+	}
+
+	int horas = seconds_entry / 3600;
+	int minutos = (seconds_entry % 3600) / 60;
+	int seconds = (seconds_entry % 3600) % 60;
+	printf("%02d Horas %02d Minutos %02d Segundos\n", horas, minutos, seconds);
 
 
 	return 0;

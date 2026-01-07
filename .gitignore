@@ -1,0 +1,50 @@
+# C
+*.o
+*.a
+*.so
+*.out
+*.exe
+*.dSYM/
+
+# C#
+bin/
+obj/
+*.csproj.user
+*.sln.DotSettings.user
+
+# JavaScript & TypeScript
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+*.egg-info/
+dist/
+build/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# General
+.DS_Store
+.idea/
+*.swp
+*.swo
+*~
+.trash/
+.tmp/
+temp/
+*.log
