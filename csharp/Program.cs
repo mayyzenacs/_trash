@@ -4,26 +4,35 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Bem vindos ao McDonalds");
+      int a = 1;
+      int b = 2;
 
-        Console.WriteLine("Digite o número do pedido desejado");
-        Console.WriteLine("\n 1 - Quarteirão\n 2 - McChicken\n 3 - BigMac\n 4 - BraboMC");
-        int escolha = Convert.ToInt32(Console.ReadLine());
-
-        switch(escolha) {
-            case 1:
-                Console.WriteLine("Você escolheu um Quarteirão Valor R$ 29,9");
-                break;
-            case 2:
-                Console.WriteLine("Você escolheu um McChiken Valor R$ 15,00");
-                break;
-            case 3:
-                Console.WriteLine("Você escolheu um BigMac Valor R$ 25,9");
-                break;
-            case 4:
-                Console.WriteLine("Você escolheu um BraboMC Valor R$ 49,9");
-                break;
+      for (int i = 1; i < 11; i++)   
+        {
+            if (i == 1 || i == 2)
+            {
+                Console.WriteLine($"Tabuada {a}x{i} = {i*a}"); 
+            }
+            
+            if (i == 10)
+            {
+                Console.WriteLine("---");
+                Console.WriteLine($"Tabuada {a}x{i} = {i*a}"); 
+            }
+        }            
+        Console.WriteLine("");
+        for (int y = 1; y < 3; y++) 
+        {
+            Console.WriteLine($"Tabuada {b}x{y} = {y*b}");    
         }
-        Console.WriteLine("Lanche não encontrado ou fora de estoque");
+        Console.WriteLine("---");
+        for (int z = 10; z != 0; z--) 
+        {
+            if (z == 10)
+            {
+                Console.WriteLine($"Tabuada {b}x{z} = {z*b}");
+            }
+                
+        }
     }
 }
